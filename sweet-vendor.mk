@@ -149,9 +149,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/etc/camera/golden_rear_dc_cal_wu.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_rear_dc_cal_wu.bin \
     vendor/xiaomi/sweet/proprietary/vendor/etc/camera/hdr_ui9_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hdr_ui9_params.config \
     vendor/xiaomi/sweet/proprietary/vendor/etc/camera/lf_facerank_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lf_facerank_model.bin \
-    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/facedetectpp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facedetectpp_0_5_2_model \
     vendor/xiaomi/sweet/proprietary/vendor/etc/camera/male_bg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/male_bg.png \
     vendor/xiaomi/sweet/proprietary/vendor/etc/camera/male_icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/male_icon.png \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/facedetectpp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facedetectpp_0_5_2_model \
     vendor/xiaomi/sweet/proprietary/vendor/etc/camera/mibokeh_712_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_opencl.bin \
     vendor/xiaomi/sweet/proprietary/vendor/etc/camera/mibokeh_712_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_parameter.bin \
     vendor/xiaomi/sweet/proprietary/vendor/etc/camera/model_back.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_back.dlc \
@@ -1178,6 +1178,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    libFaceDetectpp-0.5.2 \
+    libfacedet \
     CACertService \
     CneApp \
     IWlanService \
@@ -1206,6 +1208,4 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     manifest_android.hardware.drm@1.3-service.widevine \
     manifest_vendor.dolby.hardware.dms \
-    libFaceDetectpp-0.5.2 \
-    libfacedet \
     vendor.qti.gnss@4.0-service
